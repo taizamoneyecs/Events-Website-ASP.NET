@@ -1,0 +1,133 @@
+﻿@import url('https://fonts.cdnfonts.com/css/kapakana');
+html {
+    
+    
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    padding-top:80px;
+}
+
+.login-form {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250,240,244);
+}
+
+    .login-form h2 {
+        margin-bottom: 20px;
+        color: rgb(255,153,187);
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border:none;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .login-form button {
+        background-color: rgb(255,153,187);
+        color: rgb(250,240,244);
+        cursor: pointer;
+    }
+
+        .login-form button:hover {
+            background-color: rgb(255,153,187);
+            color:hotpink;
+        }
+
+.signup-link {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; 
+    color:hotpink;
+}
+
+    .signup-link img {
+        width: 100%;
+        height: auto;
+    }
+
+    .signup-link a {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        color: hotpink;
+        text-decoration: none;
+    }
+    .signup-link a:hover{
+        text-decoration:underline;
+    }
+
+footer {
+    background-color: rgb(255,153,187);
+    color: rgb(250,240,244);
+    padding: 20px 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+    .footer-section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+    .footer-section.links ul li {
+        display: inline-block;
+    }
+
+    .footer-section.links a {
+        text-decoration: none;
+        color: rgb(250,240,244);
+    }
+
+        .footer-section.links a:hover {
+            color: hotpink;
+        }
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+    .social-icons a:hover {
+        color: hotpink;
+    }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - soft20181_starter</title>
+
+    @*  Section for CSS Start *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link href="https://fonts.cdnfonts.com/css/kapakana" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/soft20181_starter.styles.css" asp-append-version="true" />
+    @*  Section for CSS Start *@
+
+</head>
+<body>
+
+   @*  Header Section Start *@
+   
+     
+
+    <div class="navbar">
+        <div class="brand">PnkEvents</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <i class="fa fa-search" type="submit"></i>
+        </div>
+        <div class="user-registration">
+            <a asp-page="login"><i class="fa fa-fw fa-user"></i></a>
+        </div>
+            
+    
+    
+    </div>
+
+            
+    @*  Header Section End *@
+
+   
+
+   @RenderBody();
+
+    @*  Footer Section Start *@
+   
+    @*  Footer Section End *@
+
+
+
+    @*  Add Site Wide JavaScript Start *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @*  Add Site Wide JavaScript End *@
+
+
+    @*  Section for Scripts Start *@
+    @await RenderSectionAsync("Scripts", required: false)
+    @*  Section for Scripts End *@
+
+</body>
+</html>

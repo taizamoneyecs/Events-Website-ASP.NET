@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - soft20181_starter</title>
+
+    @*  Section for CSS Start *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link href="https://fonts.cdnfonts.com/css/kapakana" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/soft20181_starter.styles.css" asp-append-version="true" />
+    @*  Section for CSS Start *@
+
+</head>
+<body>
+
+   @*  Header Section Start *@
+   
+     
+
+    <div class="navbar">
+        <div class="brand">PnkEvents</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <i class="fa fa-search" type="submit"></i>
+        </div>
+        <div class="qrcode">
+            <a href="#"><i class="fa fa-fw fa-qrcode"></i></a>
+        </div>
+        <div class="user-registration">
+            <a href="#"><i class="fa fa-fw fa-user"></i></a>
+        </div>
+            
+    
+    
+    </div>
+
+            
+    @*  Header Section End *@
+
+   
+
+   @RenderBody();
+
+    @*  Footer Section Start *@
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>PnkEvents</h2>
+                <p>We are a platform dedicated to empowering women and women in marginalized groups. Our mission is to create opportunities for growth, education, and empowerment, fostering inclusivity and diversity in all aspects of our events.</p>
+                
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: pnkevents@womenempowerment.com</p>
+                <p>Phone: 0115 111 2222</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <br>
+                    <li><a href="#">About</a></li>
+                    <br>
+                    <li><a href="#">Events</a></li>
+                    <br>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 PnkVerse. All rights reserved to N0969388.
+        </div>
+    </footer>
+    @*  Footer Section End *@
+
+
+
+    @*  Add Site Wide JavaScript Start *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @*  Add Site Wide JavaScript End *@
+
+
+    @*  Section for Scripts Start *@
+    @await RenderSectionAsync("Scripts", required: false)
+    @*  Section for Scripts End *@
+
+</body>
+</html>

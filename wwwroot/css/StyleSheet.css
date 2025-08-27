@@ -1,0 +1,180 @@
+﻿@import url('https://fonts.cdnfonts.com/css/kapakana');
+
+html {
+    min-height: 100vh;
+}
+
+.main-content {
+    padding-top: 60px;
+    background-color: rgb(250,240,244);
+    flex-direction: column;
+    padding-bottom:40px;
+}
+banner img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+banner {
+    font-family: 'Kapakana', sans-serif;
+    color: white;
+    
+    position: relative;
+}
+    banner h1 {
+        font-size: 100px;
+        color: white;
+        font-family: 'Kapakana', sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: rgb(250,240,244); 
+        text-align: center;
+    }
+.join1 {
+    padding-top: 10px;
+    position: relative;
+}
+    .join1 img {
+        width: 100%;
+        display: block;
+    }
+
+
+    
+    .join1 button {
+        position: absolute;
+        bottom: 10px; 
+        left: 20%; 
+        width:200px;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: rgb(250, 240, 244);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .join1 button:hover {
+            background-color: rgb(250,240,244);
+            color:rgb(255,153,187);
+        }
+
+.promo1{
+    padding-top:20px;
+}
+
+.promo1 img{
+    width:100%;
+    display:block;
+    
+}
+
+    .promo1 button {
+        position: relative;
+        bottom:350px; 
+        left: 120px; 
+        padding: 10px 20px;
+        transform: translateX(-50%);
+        background-color: rgb(250,240,244);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .promo1 button:hover {
+        background-color: rgb(250,240,244);
+        
+    }
+
+.section {
+    margin-bottom: 20px;
+}
+.section h2{
+    text-align:center;
+    color:rgb(255,153,187);
+    font-size:50px;
+}
+
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.testimonial-item {
+    flex: 1 1 300px; 
+    background-color:rgb(255,153,187);
+    height:350px;
+    color:rgb(250,240,244);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: rgb(255,153,187);
+    color: rgb(250,240,244);
+    padding: 20px 0;
+    margin-top:20px;
+    width: 100%;
+}
+
+    .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+    .footer-section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+    .footer-section.links ul li {
+        display: inline-block;
+    }
+
+    .footer-section.links a {
+        text-decoration: none; 
+        color: rgb(250,240,244);
+    }
+
+        .footer-section.links a:hover {
+            color: hotpink;
+        }
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+    .social-icons a:hover {
+        color: hotpink;
+    }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}

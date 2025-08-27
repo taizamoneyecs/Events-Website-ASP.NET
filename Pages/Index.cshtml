@@ -1,0 +1,98 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - "PnkEvents"</title>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
+    
+</head>
+    <body>
+    <main role="main" class="main-content">
+        
+    <banner>
+    <img src="~/images/diversewomen.png" alt="topbanner">
+     <h1> Welcome to PnkVerse </h1>
+    </banner>
+    <div class="join1">
+            <img src="~/images/join1.jpg" alt="join1">
+            <button>Join Us</button>
+        </div>
+    <div class="promo1">
+            <img src="~/images/promo1.jpg" alt="promo1">
+            <button>Register now</button>
+        </div>
+        
+        <div class="section">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <div class="testimonial-item">
+                    <p><strong>Name:</strong> Sarah</p>
+                    <p><strong>Event:</strong> Workshop on Financial Literacy</p>
+                    <p><strong>Feedback:</strong> "The workshop was incredibly informative and empowering. I learned so much about managing my finances and planning for the future."</p>
+                </div>
+                <div class="testimonial-item">
+                    <p><strong>Name:</strong> Maria</p>
+                    <p><strong>Event:</strong> Career Development Seminar</p>
+                    <p><strong>Feedback:</strong> "I attended the career development seminar and it was a game-changer for me. The insights shared by the speakers were invaluable."</p>
+                </div>
+                <div class="testimonial-item">
+                    <p><strong>Name:</strong> Jessica</p>
+                    <p><strong>Event:</strong> Health and Wellness Retreat</p>
+                    <p><strong>Feedback:</strong> "The health and wellness retreat was a rejuvenating experience. I left feeling refreshed and inspired to prioritize my well-being."</p>
+                </div>
+            </div>
+        </div>
+
+       
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>PnkEvents</h2>
+                <p>We are a platform dedicated to empowering women and women in marginalized groups. Our mission is to create opportunities for growth, education, and empowerment, fostering inclusivity and diversity in all aspects of our events.</p>
+
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: pnkevents@womenempowerment.com</p>
+                <p>Phone: 0115 111 2222</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <br>
+                    <li><a href=" ~/Pages/Shared/_adminLayout.cshtml">About</a></li>
+
+                    <br>
+                    <li><a asp-page="/EventDetail">Events</a></li>
+                    <br>
+                    <li><a asp-page="/Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 PnkVerse. All rights reserved to N0969388.
+        </div>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+﻿@page
+@model soft20181_starter.Pages.Index1Model
+@{
+}
+<style>
+   
+    
+
+    button {
+        padding: 10px 20px;
+        background-color: hotpink;
+        color:white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+       button:hover {
+            background-color:rgb(250,240,244);
+            color:hotpink;
+        }
+
+    /* CSS styles for the grid */
+  
+
+    .event-card {
+        border: 1px solid hotpink;
+        border-radius: 5px;
+        padding: 10px;
+        padding-bottom:20px;
+        padding-top:100px;
+    }
+</style>
+@{
+    ViewData["Title"] = "Event Detail";
+}
+
+
+@foreach (var eventItem in Model.Events)
+{
+    <div class="event-card">
+        <p>Event id: @eventItem.Id</p>
+        <p>Event Name: @eventItem.Name</p>
+        <p>Description: @eventItem.Description</p>
+        <p>Location: @eventItem.Location</p>
+        <p>Event Date and Time: @eventItem.EventDateTime.ToString()</p>
+
+        <form method="get" asp-page="/ticketpage">
+            <input type="hidden" name="eventId" value="@eventItem.Id" />
+            <button type="submit" class="button">Get Ticket</button>
+        </form>
+    </div>
+}
+

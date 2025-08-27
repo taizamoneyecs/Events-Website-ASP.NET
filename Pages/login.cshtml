@@ -1,0 +1,84 @@
+﻿@page
+@model soft20181_starter.Pages.loginModel
+@{
+    ViewData["Title"] = "Event Detail";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/StyleSheet1.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+
+            <form method="post">
+                <div>
+                    <label>Email:</label>
+                    <input type="email" asp-for="email" required />
+                    <span asp-validation-for="email" class="text-danger"></span>
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" asp-for="password" required />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+           
+            </div>
+        <div class="signup-link">
+            <img src="~/images/fitness.jpg" alt="Fitness Image">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>PnkEvents</h2>
+                <p>We are a platform dedicated to empowering women and women in marginalized groups. Our mission is to create opportunities for growth, education, and empowerment, fostering inclusivity and diversity in all aspects of our events.</p>
+
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: pnkevents@womenempowerment.com</p>
+                <p>Phone: 0115 111 2222</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <br>
+                    <li><a href=" ~/Pages/Shared/_adminLayout.cshtml">About</a></li>
+
+                    <br>
+                    <li><a asp-page="/EventDetail">Events</a></li>
+                    <br>
+                    <li><a asp-page="/Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 PnkVerse. All rights reserved to N0969388.
+        </div>
+    </footer>
+</body>
+</html>
+
+@section scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

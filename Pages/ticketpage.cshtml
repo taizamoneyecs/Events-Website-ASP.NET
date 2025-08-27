@@ -1,0 +1,55 @@
+﻿@page
+@model soft20181_starter.Pages.ticketpageModel
+@{
+}
+<style>
+   
+    
+
+    button {
+        padding: 10px 20px;
+        background-color: hotpink;
+        color:white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+       button:hover {
+            background-color:rgb(250,240,244);
+            color:hotpink;
+        }
+
+    ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+    }
+
+    li {
+        margin-bottom: 10px; /* Add spacing between list items */
+    }
+ </style>
+<h1>Ticket Page</h1>
+
+@if (Model.TicketList.Count > 0)
+{
+    <h2>Selected Events:</h2>
+    <ul>
+        @foreach (var eventId in Model.TicketList)
+        {
+            <li>You have 1 ticket for Event ID: @eventId</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No events selected.</p>
+}
+
+@foreach (var eventId in Model.EventIds)
+{
+    <form method="post">
+        <input type="hidden" name="eventId" value="@eventId" />
+        <button type="submit" class="button">Get Ticket for Event ID: @eventId</button>
+    </form>
+}
